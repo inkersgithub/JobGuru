@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navHome"
+        android:title="Home"
+        android:icon="@mipmap/home" />
+    <item android:id="@+id/navSearch"
+        android:title="Search"
+        android:icon="@mipmap/search" />
+    <item android:id="@+id/navReg"
+        android:title="Register"
+        android:icon="@mipmap/reg" />
+    <item android:id="@+id/navCredit"
+        android:title="Credits"
+        android:icon="@mipmap/credit"/>
+
+</menu>
