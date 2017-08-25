@@ -19,6 +19,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="119dp"
+        android:indeterminateTint="@color/MainColor"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView

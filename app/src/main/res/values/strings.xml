@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Job Guru</string>
+    <string name="hometitle">Home</string>
+    <string name="chattitle">Chat with us</string>
+    <string name="regtitle">Add a Job</string>
+    <string name="credititle">Credits</string>
+
 </resources>

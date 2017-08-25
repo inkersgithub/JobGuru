@@ -2,16 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/navHome"
-        android:title="Home"
+        android:title="@string/hometitle"
         android:icon="@mipmap/home" />
-    <item android:id="@+id/navSearch"
-        android:title="Search"
-        android:icon="@mipmap/search" />
+    <item android:id="@+id/navChat"
+        android:title="@string/chattitle"
+        android:icon="@mipmap/chat" />
     <item android:id="@+id/navReg"
-        android:title="Register"
+        android:title="@string/regtitle"
         android:icon="@mipmap/reg" />
     <item android:id="@+id/navCredit"
-        android:title="Credits"
+        android:title="@string/credititle"
         android:icon="@mipmap/credit"/>
 
 </menu>

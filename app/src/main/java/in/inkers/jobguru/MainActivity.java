@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.ImageButton;
+
 
 public class MainActivity extends Activity {
 
@@ -37,9 +37,9 @@ public class MainActivity extends Activity {
                         wv1.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
                         wv1.loadUrl(url);
                         break;
-                    case R.id.navSearch:
+                    case R.id.navChat:
                         wv1.setWebViewClient(new MyBrowser());
-                        url = "http://www.inkers.in";
+                        url = "http://www.ncpir.com/app/index.php/chat";
                         wv1.getSettings().setLoadsImagesAutomatically(true);
                         wv1.getSettings().setJavaScriptEnabled(true);
                         wv1.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
                         break;
                     case R.id.navReg:
                         wv1.setWebViewClient(new MyBrowser());
-                        url = "http://www.google.com";
+                        url = "http://www.jiss.in/jobguru/index.php/addanjob";
                         wv1.getSettings().setLoadsImagesAutomatically(true);
                         wv1.getSettings().setJavaScriptEnabled(true);
                         wv1.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
@@ -55,7 +55,7 @@ public class MainActivity extends Activity {
                         break;
                     case R.id.navCredit:
                         wv1.setWebViewClient(new MyBrowser());
-                        url = "http://www.prominence.co.in";
+                        url = "http://www.inkers.in";
                         wv1.getSettings().setLoadsImagesAutomatically(true);
                         wv1.getSettings().setJavaScriptEnabled(true);
                         wv1.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
