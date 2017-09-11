@@ -24,6 +24,13 @@ public class MainActivity extends Activity {
 
         wv1=findViewById(R.id.webView);
 
+        wv1.setWebViewClient(new MyBrowser());
+        url = "http://www.jiss.in/jobguru";
+        wv1.getSettings().setLoadsImagesAutomatically(true);
+        wv1.getSettings().setJavaScriptEnabled(true);
+        wv1.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        wv1.loadUrl(url);
+
         nav=findViewById(R.id.navigation);
         nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -77,9 +84,9 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (event.getAction() == KeyEvent.ACTION_DOWN) {
-            switch (keyCode) {
+    public boolean onKeyDown(int keyCode, KeyEvent event) { //to load last page when
+        if (event.getAction() == KeyEvent.ACTION_DOWN) {    //when physical back button pressed
+            switch (keyCode) {                              //instead of closing app
                 case KeyEvent.KEYCODE_BACK:
                     if (wv1.canGoBack()) {
                         wv1.goBack();
